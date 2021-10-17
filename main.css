@@ -27,6 +27,12 @@ div#beach {
   background-size: 1700px;
   background-repeat: no-repeat;
 }
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  height: 1000px;
+}
 
 div#video {
   position: absolute;
