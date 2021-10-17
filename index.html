@@ -1,0 +1,132 @@
+<!DOCTYPR html>
+
+
+
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title> TranPhuongThao</title>
+
+        <!-- Link CSS Style.css file-->
+
+        <link rel="stylesheet" href="main.css">
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <div class='moon'>
+            <div class='crater1'></div>
+            <div class='crater2'></div>
+            <div class='crater3'></div>
+
+
+        </div>
+
+        <canvas id="canvas"></canvas>
+
+        <div id="sea"></div>
+        <div id="beach"></div>
+
+
+        <div class="image">
+
+
+            <img id="img" onclick="changeImage()" src="./image/img1.jpeg" alt="" widht="400px" height="250" />
+        </div>
+        <script>
+            var index = 1;
+            changeImage = function () {
+                var imgs = ["    ./image/img1.jpeg ", " ./image/img2.jpeg", "./image/img3.jpg", "./image/img4.jpg",
+                    "./image/img5.jpg", "./image/img6.jpg", "./image/img7.jpg", "./image/img8.jpg",
+                    "./image/img9.jpg", "./image/img10.jpg", "./image/img11.jpg", "./image/img12.jpg",
+                    "./image/img13.jpg", "./image/img14.jpg"
+                ]
+
+                document.getElementById('img').src = imgs[index];
+
+                index++;
+                if (index == 14) {
+                    index = 0;
+                }
+
+            }
+
+            setInterval(changeImage, 4000);
+        </script>
+
+
+        </script>
+
+
+        </script>
+
+
+
+        <img src="https://dl.dropbox.com/s/2k0mtrxc2dqurmh/jumping.png" alt="Jumping-people" id="people" />
+
+        <div id="merrywrap" class="merrywrap">
+
+            <div class="giftbox">
+
+
+                <div class="cover">
+
+                    <div></div>
+                </div>
+
+                <div class="box"></div>
+            </div>
+
+            <div class="icons">
+                <div class="row">
+                    <span>H</span>
+                    <span>a</span>
+                    <span>p</span>
+                    <span>p</span>
+                    <span>y</span>
+
+                    >
+                </div>
+                <div class="row">
+                    <span>B</span>
+                    <span>i</span>
+                    <span>r</span>
+                    <span>t</span>
+                    <span>h</span>
+                    <span>d</span>
+                    <span>a</span>
+                    <span>y</span>
+                </div>
+
+                <div class="row">
+                    <span>T</span>
+                    <span>r</span>
+                    <span>ầ</span>
+                    <span>n</span>
+                    <span>P</span>
+                    <span>h</span>
+                    <span>ư</span>
+                    <span>ơ</span>
+                    <span>n</span>
+                    <span>g</span>
+                    <span>T</span>
+                    <span>h</span>
+                    <span>ả</span>
+                    <span>o</span>
+                    <span>Xinh</span>
+                    <span>g</span>
+                    <span>á</span>
+                    <span>i</span>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="video"></div>
+
+        <script src="javascript.js"></script>
+
+    </body>
+
+    </html>
